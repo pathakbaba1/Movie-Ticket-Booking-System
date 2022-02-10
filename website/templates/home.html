@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 style="margin-top: 40px; color:white">Movies available:</h1>
+<div class="container" style="margin-top: 50px">
+  <div class="row images text-center" id="book">
+    <div class="col-sm">
+      <img src="../static/images/medium-cover (0).jpg">
+      <div><button class="btn btn-primary booknow" value="1">Book Now</button></div>
+    </div>
+    <div class="col-sm">
+      <img src="../static/images/medium-cover (1).jpg">
+      <div><button class="btn btn-primary booknow" value="2">Book Now</button></div>
+
+    </div>
+    <div class="col-sm">
+      <img src="../static/images/medium-cover (2).jpg">
+      <div><button class="btn btn-primary booknow" value="3">Book Now</button></div>
+
+    </div>
+    <div class="col-sm">
+      <img src="../static/images/medium-cover (3).jpg">
+      <div><button class="btn btn-primary booknow" value="4">Book Now</button></div>
+
+    </div>
+  </div>
+</div>
+{% endblock content %}

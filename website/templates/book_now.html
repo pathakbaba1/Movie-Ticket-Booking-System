@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Book Now
+{% endblock title %}
+
+{% block content %}
+    </br>
+    {% if hall_name %}
+    {{name}}
+        <h1 align="center" style="color: white">Congratulations!! Ticket booked.</h1>
+        <br>
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col">
+                    <h5>Movie Name:</h5>
+                </div>
+                <div class="col">
+                    <h5>{{movie}}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Hall Name:</h5>
+                </div>
+                <div class="col">
+                    <h5>{{hall_name}}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Show Date:</h5>
+                </div>
+                <div class="col">
+                    <h5>{{date}}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Show Time:</h5>
+                </div>
+                <div class="col">
+                    <h5>{{time}}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Seat Type:</h5>
+                </div>
+                <div class="col">
+                    <h5>{{seat_type}}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>No. of seats:</h5>
+                </div>
+                <div class="col">
+                    <h5>{{no_of_seats}}</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Total Price:</h5>
+                </div>
+                <div class="col">
+                    <h5>{{total_price}}</h5>
+                </div>
+            </div>
+        </li>
+    {% else %}
+        <div class="card book_now_card">
+            <div class="card-body">
+                <form method="post">
+                    {{form.hidden_tag()}}
+                    <legend class="border-bottom mb-4">Movie: {{movie}}</legend>
+                    <div class="form-group">
+                        {{form.date.label(class="form-label")}}
+                        {{form.date(class="form-control")}}
+                    </div>
+                    <div class="form-group">
+                        {{form.time.label(class="form-label")}}
+                        <br>
+                        {{form.time(class="form-check-label")}}
+                    </div>
+                    <div class="form-group">
+                        {{form.hall_name.label(class="form-label")}}
+                        {{form.hall_name(class="form-select form-control")}}
+                    </div>
+                    <div class="form-group">
+                        {{form.seat_type.label(class="form-label")}}
+                        {{form.seat_type(class="form-select form-control")}}
+                    </div>
+                    <div class="form-group">
+                        {{form.no_of_seats.label(class="form-label")}}
+                        {{form.no_of_seats(class="form-select form-control")}}
+                    </div>
+                    <div class="form-group">
+                        {{form.submit(class="btn btn-outline-info")}}
+                    </div>
+                </form>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock content %}

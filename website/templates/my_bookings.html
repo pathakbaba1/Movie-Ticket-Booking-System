@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}
+    My Bookings
+{% endblock title %}
+
+{% block content %}
+    <h1 style="color: white; margin-top: 20px" >My Bookings:</h1>
+    <ol reversed class="list-group list-group-flush" id="ticket">
+      {% for booking in user.bookings %}
+      <li class="list-group-item">
+          <h5>Ticket Number - {{ booking.ticket_no }}</h5>
+          <div class="row">
+                <div class="col">
+                    <h6>Movie Name:</h6>
+                </div>
+                <div class="col">
+                    <h6>{{booking.movie_name}}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Hall Name:</h6>
+                </div>
+                <div class="col">
+                    <h6>{{booking.hall_name}}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Show Date:</h6>
+                </div>
+                <div class="col">
+                    <h6>{{booking.date}}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Show Time:</h6>
+                </div>
+                <div class="col">
+                    <h6>{{booking.time}}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Seat Type:</h6>
+                </div>
+                <div class="col">
+                    <h6>{{booking.seat_type}}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>No. of seats:</h6>
+                </div>
+                <div class="col">
+                    <h6>{{booking.no_of_seats}}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h6>Total Price:</h6>
+                </div>
+                <div class="col">
+                    <h6>{{booking.total_price}}</h6>
+                </div>
+            </div>
+      </li>
+      {% endfor %}
+    </ol>
+{% endblock content %}

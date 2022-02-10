@@ -1,0 +1,90 @@
+
+body{
+    background-image: url('../static/images/Download-Movie-Template.jpg');
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_card {
+
+    width: 350px;
+    height: 500px;
+    float: right;
+    margin-top: 100px;
+    border: 2px solid black;
+    box-shadow: -5px 5px 12px black;
+
+}
+
+.movie_card {
+
+    width: 1100px;
+    height: 450px;
+    margin-top: 20px;
+    border: 2px solid black;
+    box-shadow: -5px 5px 12px black;
+
+}
+
+.signup_card {
+
+    width: 600px;
+    height: 600px;
+    float: center;
+    margin-top: 50px;
+    border: 2px solid black;
+    box-shadow: -5px 5px 12px black;
+
+}
+.book_now_card {
+
+    width: 700px;
+    height: 650px;
+    float: center;
+    margin-top: 0;
+    border: 2px solid black;
+    box-shadow: -5px 5px 12px black;
+
+}
+
+.login {
+    border-radius: 20px;
+    width: 170px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.email {
+    margin-top: 10px;
+}
+
+.nav_bar{
+    float: right;
+}
+.nav_bar button{
+    background: #4FBDBA;
+    border: 1px solid #b963e0;
+    margin-right: 4px;
+    font-weight: 500;
+    border-radius: 5px;
+    /*height:40px;*/
+    text-align:center;
+}
+.nav-link{
+    color:black;
+
+}
+.col-sm button{
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color: red;
+}
+.col-sm button:hover{
+    background-color: green;
+    border: 2px solid white;
+}
