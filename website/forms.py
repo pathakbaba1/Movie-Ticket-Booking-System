@@ -40,7 +40,8 @@ class BookingForm(FlaskForm):
                       choices=[('09:00 AM', '09:00 AM'),
                                ('12:00 PM', '12:00 PM'),
                                ('03:00 PM', '03:00 PM'),
-                               ('06:00 PM', '06:00 PM')])
+                               ('06:00 PM', '06:00 PM'),
+                               ('09:00 PM', '09:00 PM')])
     hall_name = SelectField('Select your hall:',
                        choices=[('Cinepolis: Forum Shantiniketan, Bengaluru', 'Cinepolis: Forum Shantiniketan, Bengaluru'),
                                 ('INOX: Galleria Mall, Yelahanka', 'INOX: Galleria Mall, Yelahanka'),

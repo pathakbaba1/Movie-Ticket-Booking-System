@@ -1,23 +1,89 @@
 
 body{
+
     background-image: url('../static/images/Download-Movie-Template.jpg');
     height: 100vh;
-
-    /* Center and scale the image nicely */
+     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.login_card {
+.custom_cont {
+    padding: 0 100px 0 100px;
+}
 
-    width: 350px;
-    height: 500px;
-    float: right;
-    margin-top: 100px;
+.wrapper_login{
+    display:grid;
+    padding: 100px 0 0 0;
+    grid-template-columns: 65% 35%;
+
+}
+
+.wrapper_signup{
+    display:grid;
+    padding: 40px 0 0 50px;
+    grid-template-columns: 65% 35%;
+
+}
+
+.wrapper_booknow{
+    display:grid;
+    padding: 50px 255px 0 255px;
+
+}
+
+.welcome {
+    padding: 125px 50px 0 100px;
+}
+
+.welcome>ul>li {
+    font-size: 1.4rem;
+    line-height: 40px;
+    margin-left: 30px;
+    display: block;
+    width: 500px;
+}
+
+ul>li {
+    list-style-type: none;
+    display: inline-block;
+    width: 120px;
+}
+
+.welcome_title {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 44px;
+    padding: 16px;
+    background: #343a40;
+    line-height: 32px;
+    color: white;
+    width: 500px;
+    text-align: center;
+}
+
+.login_container {
+    padding: 25px 50px 25px 50px;
+    background-color: white;
     border: 2px solid black;
     box-shadow: -5px 5px 12px black;
+}
 
+.signup_container {
+    padding: 25px 50px 25px 50px;
+    background-color: white;
+    /*background-color: #343a40;*/
+    border: 2px solid black;
+    box-shadow: -5px 5px 12px black;
+}
+
+.booknow_container {
+    padding: 20px 50px 15px 50px;
+    background-color: white;
+    /*background-color: #343a40;*/
+    border: 2px solid black;
+    box-shadow: -5px 5px 12px black;
 }
 
 .movie_card {
@@ -25,27 +91,6 @@ body{
     width: 1100px;
     height: 450px;
     margin-top: 20px;
-    border: 2px solid black;
-    box-shadow: -5px 5px 12px black;
-
-}
-
-.signup_card {
-
-    width: 600px;
-    height: 600px;
-    float: center;
-    margin-top: 50px;
-    border: 2px solid black;
-    box-shadow: -5px 5px 12px black;
-
-}
-.book_now_card {
-
-    width: 700px;
-    height: 650px;
-    float: center;
-    margin-top: 0;
     border: 2px solid black;
     box-shadow: -5px 5px 12px black;
 
